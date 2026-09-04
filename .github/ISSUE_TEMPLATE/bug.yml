@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible software defect
+title: "[BUG] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include passwords, tokens, personal data, or exploitable security details. Use the security policy for vulnerabilities."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest reliable reproduction steps.
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Module / area
+      description: Where in the product does this happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Local
+        - Staging
+        - Production
+        - Mobile app
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe evidence
+      description: Logs/screenshots without credentials or personal data.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we prove this bug is fixed?
+    validations:
+      required: true
