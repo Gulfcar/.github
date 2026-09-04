@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a product or operational capability
+title: "[FEATURE] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / opportunity
+      description: What user or operational problem are we solving?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: Describe the result, not only a specific implementation.
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Module / area
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+      description: List observable conditions that define done.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks / dependencies
+      description: Note security, database, external integration, deployment, or backward-compatibility concerns.

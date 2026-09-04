@@ -1,0 +1,37 @@
+name: Technical debt
+description: Refactoring, architecture, reliability, maintainability, or cleanup work
+title: "[TECH DEBT] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Current problem
+      description: What is fragile, duplicated, unsafe, slow, or difficult to maintain?
+    validations:
+      required: true
+  - type: textarea
+    id: target
+    attributes:
+      label: Target state
+      description: What should the architecture or implementation look like after this work?
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Module / area
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety / migration notes
+      description: How will behavior, data, compatibility, and rollback be protected?
+    validations:
+      required: true
